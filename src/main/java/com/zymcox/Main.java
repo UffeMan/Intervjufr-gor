@@ -19,6 +19,7 @@ public class Main {
     }
 
     // Romerska siffror
+    @org.jetbrains.annotations.NotNull
     private static String rom(int x) {
         StringBuilder r = new StringBuilder();
         char[] rs = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};
