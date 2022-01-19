@@ -22,8 +22,8 @@ public class Main {
     @org.jetbrains.annotations.NotNull
     private static String rom(int x) {
         StringBuilder r = new StringBuilder();
-        char[] rs = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};
-        int[] val = {1, 5, 10, 50, 100, 500, 1000};
+        String[] rs = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
+        int[] val = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
         for (int i = val.length - 1; i >= 0; i--) {
             while (x - val[i] >= 0) {
                 x = x - val[i];
